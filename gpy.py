@@ -1,3 +1,8 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import flash_attn
+
 class GPTConfig:
     sequence_len: int = 2048
     vocab_size: int = 32768
